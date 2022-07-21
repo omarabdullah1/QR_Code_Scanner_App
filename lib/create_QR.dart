@@ -24,7 +24,6 @@ class _CreateScannerState extends State<CreateScanner> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           BarcodeWidget(
-
             data: create,
             barcode: Barcode.qrCode(),
             color: Colors.black,
@@ -49,11 +48,17 @@ class _CreateScannerState extends State<CreateScanner> {
                   ))),
             ),
           ),
-          ElevatedButton(
+          MaterialButton(
               onPressed: () {
                 saveImage();
               },
-              child: const Text('Save Png')),
+              color: const Color(0xFF008080),
+              child: const Text(
+                'Save Png',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              )),
           SizedBox(
             width: MediaQuery.of(context).size.width,
           ),
