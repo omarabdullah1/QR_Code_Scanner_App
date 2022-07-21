@@ -1,0 +1,35 @@
+name: scanner
+description: A new Flutter project.
+
+publish_to: "none"
+
+uversion: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_barcode_scanner: ^2.0.0
+  url_launcher: ^6.1.4
+  barcode_widget: ^2.0.2
+  shared_preferences: ^2.0.15
+  gallery_saver: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/scan.png"
+
+flutter:
+  uses-material-design: true
