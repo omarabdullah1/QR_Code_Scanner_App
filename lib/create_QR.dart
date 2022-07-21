@@ -49,16 +49,17 @@ class _CreateScannerState extends State<CreateScanner> {
             ),
           ),
           MaterialButton(
-              onPressed: () {
-                saveImage();
-              },
-              color: const Color(0xFF008080),
-              child: const Text(
-                'Save Png',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              )),
+            onPressed: () {
+              saveImage();
+            },
+            color: const Color(0xFF008080),
+            child: const Text(
+              'Save Png',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
           SizedBox(
             width: MediaQuery.of(context).size.width,
           ),
